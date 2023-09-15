@@ -1,2 +1,2 @@
 Welcome to this file. It is a thrilling place.
-This is a VSCode chaange.
+This is my merge that combines my online and VSCode edit.
