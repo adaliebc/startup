@@ -1,2 +1,2 @@
 # startup
-[relative link](notes.md)
+[notes file](notes.md)
