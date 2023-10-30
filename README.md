@@ -24,3 +24,13 @@ This is where all of the reviews and purchases go. Each item saves the reviews a
 
 ### Websocket Data:
 This is how the comments and reviews are entered into the site. You can see the most recent comments and reviews, respond to those, ask questions, etc.
+
+
+### HTML
+All webpages are written out, they are linked together and have different things on each one.
+
+### CSS
+There is a consistant color scheme and font gowing through the site.
+
+### JS
+I have implemented JS in my Shop's tab where we can make comments and log in. I have not yet been able to make these encounters stay on the site or keep login info.
