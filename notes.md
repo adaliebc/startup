@@ -301,3 +301,41 @@ const getData = async () => {
         console.error(error);
     }
 };
+
+
+### JSON
+
+### JSON Data
+{
+  "name": "John Doe",
+  "age": 30,
+  "isEmployed": true,
+  "address": {
+    "street": "123 Main St",
+    "city": "Exampleville",
+    "postalCode": "12345"
+  },
+  "languages": ["English", "Spanish"],
+  "isMarried": false
+}
+
+### Dot Notation For Property
+jsonData.name // Output: "John Doe"
+
+### Nested Dot For Nested Property
+jsonData.address.city // Output: "Exampleville"
+
+### Accessing Arrays
+jsonData.languages[1] // Output: "Spanish"
+
+### Converting JSON
+const obj = { key: "value" };
+const json = JSON.stringify(obj);
+
+const jsonString = '{"key": "value"}';
+const obj = JSON.parse(jsonString);
+
+### Uses
+Sending Data: JSON is commonly used for sending data between a server and a web application.
+Configuration Files: JSON files are used for configuration settings in applications.
+API Responses: Many APIs return data in JSON format.
