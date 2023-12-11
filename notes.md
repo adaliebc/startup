@@ -339,3 +339,24 @@ const obj = JSON.parse(jsonString);
 Sending Data: JSON is commonly used for sending data between a server and a web application.
 Configuration Files: JSON files are used for configuration settings in applications.
 API Responses: Many APIs return data in JSON format.
+
+### PWS Shortcut
+Command	Purpose
+pm2 ls	List all of the hosted node processes
+pm2 monit	Visual monitor
+pm2 start index.js -n simon	Add a new process with an explicit name
+pm2 start index.js -n startup -- 4000	Add a new process with an explicit name and port parameter
+pm2 stop simon	Stop a process
+pm2 restart simon	Restart a process
+pm2 delete simon	Delete a process from being hosted
+pm2 delete all	Delete all processes
+pm2 save	Save the current processes across reboot
+pm2 restart all	Reload all of the processes
+pm2 restart simon --update-env	Reload process and update the node version to the current environment definition
+pm2 update	Reload pm2
+pm2 start env.js --watch --ignore-watch="node_modules"	Automatically reload service when index.js changes
+pm2 describe simon	Describe detailed process information
+pm2 startup	Displays the command to run to keep PM2 running after a reboot.
+pm2 logs simon	Display process logs
+pm2 env 0	Display environment variables for process. Use pm2 ls to get the process ID
+
