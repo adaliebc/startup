@@ -360,3 +360,8 @@ pm2 startup	Displays the command to run to keep PM2 running after a reboot.
 pm2 logs simon	Display process logs
 pm2 env 0	Display environment variables for process. Use pm2 ls to get the process ID
 
+### Endpoint Testing
+Use JSON to write tests.
+Using test driven development (TDD) for testing service endpoints is a common industry practice. Testing services is usually easier than writing UI tests because it does not require a browser. However, it does still take effort to learn how to write tests that are effective and efficient. Making this a standard part of your development process will give you a significant advantage as you progress in your professional career.
+
+As demonstrated by the following State of JS survey, there are lots of good testing packages that work well with Express driven services. We are going to look at the current champion Jest.
