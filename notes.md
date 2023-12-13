@@ -365,3 +365,26 @@ Use JSON to write tests.
 Using test driven development (TDD) for testing service endpoints is a common industry practice. Testing services is usually easier than writing UI tests because it does not require a browser. However, it does still take effort to learn how to write tests that are effective and efficient. Making this a standard part of your development process will give you a significant advantage as you progress in your professional career.
 
 As demonstrated by the following State of JS survey, there are lots of good testing packages that work well with Express driven services. We are going to look at the current champion Jest.
+
+### Storage
+There are many such solutions out there, but one of the most popular ones is AWS S3. S3 provides the following advantages:
+
+It has unlimited capacity
+You only pay for the storage that you use
+It is optimized for global access
+It keeps multiple redundant copies of every file
+You can version the files
+It is performant
+It supports metadata tags
+You can make your files publicly available directly from S3
+You can keep your files private and only accessible to your application
+In this course we will not be using any storage services for the Simon project. If, however, you want to use S3 as the storage service for your Startup application, then you need to learn how to use the AWS SDK. You can find detailed information about using AWS S3 with Node.js on the AWS website. Generally, the steps you need to take include:
+
+Creating a S3 bucket to store your data in.
+Getting credentials so that your application can access the bucket.
+Using the credentials in your application.
+Using the SDK to write, list, read, and delete files from the bucket.
+
+### Deploy
+How to Deploy since I keep forgeting where my pemkey is:
+./deploy.sh -k ~/.ssh/CS260.pem -h domain -s subdomain
