@@ -388,3 +388,23 @@ Using the SDK to write, list, read, and delete files from the bucket.
 ### Deploy
 How to Deploy since I keep forgeting where my pemkey is:
 ./deploy.sh -k ~/.ssh/CS260.pem -h domain -s subdomain
+
+### Log-In
+The public/index.html, public/login.js, and public/login.css files provide all the login UI. Bootstrap provides the styling for the controls.
+
+When index.html is loaded an anonymous function in login.js determines if the user is already authenticated and uses that state to hide or show the login controls.
+
+When a user logs in, logs out, or creates credentials the service endpoints are called.
+
+The application service uses a secure cookie to store the authorization token for an authenticated user.
+
+function setAuthCookie(res, authToken) {
+  res.cookie(authCookieName, authToken, {
+    secure: true,
+    httpOnly: true,
+    sameSite: 'strict',
+  });
+}
+Note the use of secure, httpOnly, and sameSite. Make sure you are familiar with what each of these mean.
+
+When a user is logged in, the cookie is added. When a user makes a secure request, the cookie is checked. When the user logs out, the cookie is removed.
