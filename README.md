@@ -20,17 +20,17 @@ The shop owner can change the items on sale as well as the related blog posts, i
 As stated above, the user is required to sign in in order to make a purchase. This then opens their account where they save their name, address, and contact information. All of the user's data is saved under their account. Through this account they are able to leave comments and reviews.
 
 ### Database Data:
-This is where all of the reviews and purchases go. Each item saves the reviews and shows the average star rating as well as the comments. The owner of the site is able to view each of the purchases and if they were linked to a review. They are able to see the contact informationa and reach out to the buyers and send updates.
+This is where all of the reviews and purchases go. Each item saves the reviews and shows the average star rating as well as the comments. The owner of the site is able to view each of the purchases and if they were linked to a review. They are able to see the contact information and reach out to the buyers and send updates.
 
 ### Websocket Data:
 This is how the comments and reviews are entered into the site. You can see the most recent comments and reviews, respond to those, ask questions, etc.
 
 
 ### HTML
-All webpages are written out, they are linked together and have different things on each one.
+All webpages are written out, they are linked together and have different things on each one. I want to edit the color scheme and make it look more professional over time.
 
 ### CSS
-There is a consistant color scheme and font gowing through the site.
+There is a consistant color scheme and font going through the site.
 
 ### JS
-I have implemented JS in my Shop's tab where we can make comments and log in. I have not yet been able to make these encounters stay on the site or keep login info.
+JSON is working towards developing an authentication system and maybe one day I can link with PayPal and create secure payments.
